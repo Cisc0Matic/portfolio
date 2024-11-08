@@ -100,6 +100,18 @@ body {
     margin: 0 auto;
 }
 
+.abme{
+    
+    width: 100%;
+    
+}
+
+.abme-section{
+    padding: 100px;
+    width: 70%;
+    margin: 0 auto;
+    
+}
 #proj div:hover{
     width: 800px;
     transition: 500ms ease-in-out;
