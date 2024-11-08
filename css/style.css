@@ -14,6 +14,7 @@ main{
     background-color:gray ;
 
 }
+.gradient-background { height: 100%; display: flex; justify-content: center; align-items: center; background: linear-gradient(45deg, #ff6b6b, #f06595, #cc5de8, #845ef7, #5c7cfa, #339af0, #22b8cf, #20c997, #51cf66, #94d82d, #fcc419, #ff922b); background-size: 300% 300%; animation: gradientAnimation 10s ease infinite; } @keyframes gradientAnimation { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
 .navbar {
     overflow: hidden;
     background-color: #333;
@@ -105,11 +106,18 @@ body {
     width: 100%;
     
 }
-
+.abme-section h1{
+    text-align: center;
+}
+.abme-section h2{
+    text-align: center;
+}
 .abme-section{
     padding: 100px;
     width: 70%;
     margin: 0 auto;
+    background-color: #ccc;
+    border-radius: 2cap;
     
 }
 #proj div:hover{
