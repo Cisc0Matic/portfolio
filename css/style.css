@@ -66,7 +66,9 @@ main{
         text-align: left;
     }
 }
-
+.intro{
+    text-align: center;
+}
 body {
     margin-top: 50px; /* Ajusta este valor según la altura de tu navbar */
 }
