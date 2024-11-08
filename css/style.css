@@ -82,3 +82,39 @@ body {
     color: inherit;
     color: aliceblue;
 }
+#proj {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#proj div {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 30px;
+    
+    width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    transition:  width 500ms;
+    margin: 0 auto;
+}
+
+#proj div:hover{
+    width: 800px;
+    transition: 500ms ease-in-out;
+}
+#proj img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+#proj h2 {
+    margin-top: 0;
+}
+
+.title2{
+    text-align: center;
+
+}
