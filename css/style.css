@@ -163,7 +163,7 @@ main {
         top: 0;
     }
 
-   
+
 
     .navbar.responsive a {
         float: none;
@@ -172,16 +172,24 @@ main {
     }
 }
 
-.card-group {
-    margin: 10%;
-    /* margin-top: 100%; */
-    /* align-items: center; */
-    display: inline-flex;
-    flex-direction: column;
-    background-color: #121212;
-    color: var(--text-color);
+.container {
+    max-width: 600px; /* Ajusta este valor según tus necesidades */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+  }
+  
+  .card-group {
+    display: flex;
+    flex-direction: column; /* Disposición vertical de las cartas */
+  }
 
-}
+  .img-responsive {
+    align-items: center;
+    width: 50%; /* Ajusta este valor según tus necesidades */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+  }
+  
+  
 
 .ft {
     text-align: center;
