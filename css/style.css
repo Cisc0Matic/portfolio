@@ -25,6 +25,7 @@ body {
 main {
     height: 180rem;
     background-color: var(--background-light);
+    color: whitesmoke;
 }
 
 .gradient-background {
@@ -80,6 +81,8 @@ main {
 
 .intro {
     text-align: center;
+    color: whitesmoke;
+
 }
 
 .background {
@@ -111,6 +114,7 @@ main {
 
 .abme {
     width: 100%;
+    color: whitesmoke;
 }
 
 .abme-section h1,
@@ -173,23 +177,38 @@ main {
 }
 
 .container {
-    max-width: 600px; /* Ajusta este valor según tus necesidades */
-    margin: 0 auto; /* Centra el contenedor horizontalmente */
-  }
-  
-  .card-group {
-    display: flex;
-    flex-direction: column; /* Disposición vertical de las cartas */
-  }
+    max-width: 600px;
+    /* Ajusta este valor según tus necesidades */
+    margin: 0 auto;
+    /* Centra el contenedor horizontalmente */
+}
 
-  .img-responsive {
-    align-items: center;
-    width: 50%; /* Ajusta este valor según tus necesidades */
-    height: auto; /* Mantiene la proporción de la imagen */
-    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
-  }
-  
-  
+.card-group {
+    display: flex;
+    flex-direction: column;
+    /* Disposición vertical de las cartas */
+}
+
+.img-responsive {
+    justify-content: center;
+    width: 100%;
+    /* Ajusta este valor según tus necesidades */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+    max-width: 50%;
+    /* Asegura que la imagen no exceda el ancho del contenedor */
+}
+
+.custom-card {
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+.custom-card img {
+    width: 100%;
+    height: auto;
+}
+
 
 .ft {
     text-align: center;
