@@ -2,9 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-:root {
+  }
+  
+  :root {
     --font-0: "Reddit Sans Condensed", sans-serif;
     --color-0: rgb(219, 55, 44);
     --color-1: rgb(139, 92, 122);
@@ -12,23 +12,22 @@
     --background-light: #1e1e1e;
     --text-color: #e0e0e0;
     --accent-color: #bb86fc;
-}
-
-body {
+  }
+  
+  body {
     font-family: var(--font-0);
     background-color: var(--background-dark);
     color: var(--text-color);
     margin-top: 50px;
-    /* Ajusta este valor según la altura de tu navbar */
-}
-
-main {
+  }
+  
+  main {
     height: 180rem;
     background-color: var(--background-light);
     color: whitesmoke;
-}
-
-.gradient-background {
+  }
+  
+  .gradient-background {
     height: 100%;
     display: flex;
     justify-content: center;
@@ -36,73 +35,70 @@ main {
     background: linear-gradient(45deg, #ff6b6b, #f06595, #cc5de8, #845ef7, #5c7cfa, #339af0, #22b8cf, #20c997, #51cf66, #94d82d, #fcc419, #ff922b);
     background-size: 300% 300%;
     animation: gradientAnimation 10s ease infinite;
-}
-
-@keyframes gradientAnimation {
+  }
+  
+  @keyframes gradientAnimation {
     0% {
-        background-position: 0% 50%;
+      background-position: 0% 50%;
     }
-
     50% {
-        background-position: 100% 50%;
+      background-position: 100% 50%;
     }
-
     100% {
-        background-position: 0% 50%;
+      background-position: 0% 50%;
     }
-}
-
-.navbar {
+  }
+  
+  .navbar {
     overflow: hidden;
     background-color: var(--background-light);
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
-}
-
-.navbar a {
+  }
+  
+  .navbar a {
     float: left;
     display: block;
     color: var(--text-color);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-}
-
-.navbar a:hover {
+  }
+  
+  .navbar a:hover {
     background-color: var(--accent-color);
     color: var(--background-dark);
-}
-
-.navbar .icon {
+  }
+  
+  .navbar .icon {
     display: none;
-}
-
-.intro {
+  }
+  
+  .intro {
     text-align: center;
     color: whitesmoke;
-
-}
-
-.background {
+  }
+  
+  .background {
     background-color: var(--background-dark);
     transition: all 500ms ease-in-out;
-}
-
-.navbar a {
+  }
+  
+  .navbar a {
     text-decoration: none;
     color: inherit;
     color: aliceblue;
-}
-
-#proj {
+  }
+  
+  #proj {
     display: flex;
     flex-direction: column;
     gap: 20px;
-}
-
-#proj div {
+  }
+  
+  #proj div {
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 30px;
@@ -110,108 +106,98 @@ main {
     background-color: var(--background-light);
     transition: width 500ms;
     margin: 0 auto;
-}
-
-.abme {
+  }
+  
+  .abme {
     width: 100%;
     color: whitesmoke;
-}
-
-.abme-section h1,
-.abme-section h2 {
+  }
+  
+  .abme-section h1,
+  .abme-section h2 {
     text-align: center;
-}
-
-.abme-section {
+  }
+  
+  .abme-section {
     padding: 100px;
     width: 70%;
     margin: 0 auto;
     background-color: #121212;
     border-radius: 2cap;
-}
-
-.title2 {
+  }
+  
+  .title2 {
     text-align: center;
-}
-
-@media screen and (max-width: 600px) {
+  }
+  
+  @media screen and (max-width: 600px) {
     html {
-        height: 100%;
-        position: absolute;
-        padding-top: 0;
+      height: 100%;
+      position: absolute;
+      padding-top: 0;
     }
-
+  
     body {
-        margin: 0;
-        overflow-x: hidden;
-        width: 100%;
-        position: relative;
+      margin: 0;
+      overflow-x: hidden;
+      width: 100%;
+      position: relative;
     }
-
+  
     nav {
-        display: flex;
-        width: 100%;
+      display: flex;
+      width: 100%;
     }
-
+  
     .navbar {
-        position: relative;
+      position: relative;
     }
-
+  
     .navbar.responsive {
-        position: relative;
+      position: relative;
     }
-
+  
     .navbar.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
     }
-
-
-
+  
     .navbar.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
+      float: none;
+      display: block;
+      text-align: left;
     }
-}
-
-.container {
+  }
+  
+  .container {
     max-width: 600px;
-    /* Ajusta este valor según tus necesidades */
     margin: 0 auto;
-    /* Centra el contenedor horizontalmente */
-}
-
-.card-group {
+  }
+  
+  .card-group {
     display: flex;
     flex-direction: column;
-    /* Disposición vertical de las cartas */
-}
-
-.img-responsive {
-    justify-content: center;
-    width: 100%;
-    /* Ajusta este valor según tus necesidades */
-    height: auto;
-    /* Mantiene la proporción de la imagen */
-    max-width: 50%;
-    /* Asegura que la imagen no exceda el ancho del contenedor */
-}
-
-.custom-card {
+  }
+  
+  .img-responsive {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .custom-card {
     margin-bottom: 20px;
     max-width: 100%;
-}
-
-.custom-card img {
-    width: 100%;
+  }
+  
+  .custom-card img {
+    width: auto;
+    max-width: 100%;
     height: auto;
-}
-
-
-.ft {
+  }
+  
+  .ft {
     text-align: center;
     margin-top: 4%;
-
-}
+  }
+  
