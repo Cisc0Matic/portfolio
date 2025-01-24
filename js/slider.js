@@ -1,25 +1,43 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const sliderInner = document.querySelector('.slider--inner');
-    const images = sliderInner.querySelectorAll('.img_box');
-    const prevButton = document.querySelector('.prev');
-    const nextButton = document.querySelector('.next');
-    let currentIndex = 0;
+    // Configuración de los carruseles
+    const carousels = [
+        { id: 'carouselExampleIndicators1', currentIndex: 0 },
+        { id: 'carouselExampleIndicators2', currentIndex: 0 }
+    ];
 
-    function updateSliderPosition() {
-        const offset = -currentIndex * 100; // Mover el slider en función del índice
-        sliderInner.style.transform = `translateX(${offset}%)`;
-    }
+    carousels.forEach((carousel) => {
+        const carouselElement = document.getElementById(carousel.id);
+        const sliderInner = carouselElement.querySelector('.carousel-inner');
+        const items = sliderInner.querySelectorAll('.carousel-item');
+        const prevButton = carouselElement.querySelector('.carousel-control-prev');
+        const nextButton = carouselElement.querySelector('.carousel-control-next');
 
-    prevButton.addEventListener('click', () => {
-        currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
-        updateSliderPosition();
+        // Actualiza la posición del carrusel
+        function updateCarouselPosition() {
+            items.forEach((item, index) => {
+                if (index === carousel.currentIndex) {
+                    item.classList.add('active');
+                } else {
+                    item.classList.remove('active');
+                }
+            });
+        }
+
+        // Evento para la flecha anterior
+        prevButton.addEventListener('click', () => {
+            carousel.currentIndex =
+                (carousel.currentIndex > 0) ? carousel.currentIndex - 1 : items.length - 1;
+            updateCarouselPosition();
+        });
+
+        // Evento para la flecha siguiente
+        nextButton.addEventListener('click', () => {
+            carousel.currentIndex =
+                (carousel.currentIndex < items.length - 1) ? carousel.currentIndex + 1 : 0;
+            updateCarouselPosition();
+        });
+
+        // Inicializa mostrando el primer slide
+        updateCarouselPosition();
     });
-
-    nextButton.addEventListener('click', () => {
-        currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
-        updateSliderPosition();
-    });
-
-    // Inicializa mostrando la primera imagen
-    updateSliderPosition();
 });
